@@ -8,7 +8,7 @@ library(Rtsne)
 library(ggplot2)
 library(splitstackshape)
 
-setwd("~your working directory")
+setwd("~Your working directory")
 
 load("Viable.Rda")
 load("Viable_after_trans.Rda")
