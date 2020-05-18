@@ -7,7 +7,7 @@
 ## wipe the workspace
 rm(list = ls())
 
-setwd("~/Desktop/GVHD analyses/McIver Mouse Flow/combined viable")
+setwd("~Your working directory")
 
 library(flowCore)
 library(flowTrans)
@@ -30,7 +30,7 @@ ALL_FCS <- flowFrame(ALL) # convert the pooled cells to FCS
 
 ALL_with_label <- cbind(as.data.frame(ALL),treatment=as.data.frame(Labels)[,4])
 
-AML <- ALL_with_label[ALL_with_label$treatment == "AML",][,-14] #extract healthy controls data
+AML <- ALL_with_label[ALL_with_label$treatment == "AML",][,-14] 
 AML_GVHD <- ALL_with_label[ALL_with_label$treatment == "AML+GVHD",][,-14]  
 AML_PD<-ALL_with_label[ALL_with_label$treatment == "AML+PD",][,-14]
 AML_PD2<-ALL_with_label[ALL_with_label$treatment == "AML+PD 2",][,-14]
