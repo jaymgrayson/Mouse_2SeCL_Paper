@@ -8,7 +8,7 @@ library(Rtsne)
 library(ggplot2)
 library(splitstackshape)
 
-setwd("~/Desktop/GVHD analyses/McIver Mouse Flow/combined viable")
+setwd("~your working directory")
 
 load("Viable.Rda")
 load("Viable_after_trans.Rda")
