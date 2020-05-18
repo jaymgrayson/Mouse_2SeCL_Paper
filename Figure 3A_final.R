@@ -9,7 +9,7 @@ library(Rtsne)
 library(ggplot2)
 library(splitstackshape)
 
-setwd("~/Desktop/GVHD analyses/McIver Mouse Flow/combined viable")
+setwd("~Your working directory")
 
 #clear the workspace
 rm(list = ls())
