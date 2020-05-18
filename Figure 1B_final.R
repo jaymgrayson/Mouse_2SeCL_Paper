@@ -9,9 +9,9 @@ library(Rtsne)
 library(ggplot2)
 library(splitstackshape)
 
-setwd("~/Desktop/GVHD analyses/McIver Mouse Flow/combined viable")
+setwd("~/Your working directory")
 
-load("~/Desktop/GVHD analyses/McIver Mouse Flow/combined viable/Figure1a_subsampled.Rda")
+load("~Figure1a_subsampled.Rda")
 Heat_Map_All<-Subsampled
 
 # Color by protein values for each marker
