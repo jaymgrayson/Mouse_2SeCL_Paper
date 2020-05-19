@@ -30,6 +30,8 @@ Subsampled3a<-subset(Subsampled3a,Treatment!="MLR")
 Subsampled3a<-subset(Subsampled3a,Treatment!="MLR+PD")
 save(Subsampled3a,file="Fig3A_data.Rda")
 Subsampled3a<-droplevels(Subsampled3a)
+
+# Each condition is plotted, then image exported as pdf and imported into Canvas and condition order rearranged.
 g2<-ggplot(Subsampled3a, aes(x=V1,y=V2,color=Outcome))+geom_point(size=0.1)+facet_wrap(~Treatment)+theme_bw()+theme(panel.border = element_blank(), panel.grid.major = element_blank(),panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))+ guides(color = guide_legend(override.aes = list(size=2)))
 g2
 
